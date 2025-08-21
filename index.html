@@ -7,8 +7,81 @@
     <link rel="stylesheet" href="/css/main.min.css" />
   </head>
   <body>
- 
-    <main></main>
-    <footer></footer>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="navbar-logo">
+            <h1>
+              <a href="./index.html">Nothing</a>
+            </h1>
+          </div>
+          <ul class="navbar-lists">
+            <li class="navbar-lists__list">
+              <a href="./pages/posts.html">Posts</a>
+            </li>
+            <li class="navbar-lists__list">
+              <a href="#">Comments</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-wrapper">
+            <div class="hero-content">
+              <h3>Nothing Saytga Hush kelibsiz</h3>
+              <p>
+                Siz bu Siteda Dummy jsondan olib kelingan Userlar, Postlar,
+                Commentlarni ko'rishingiz mumkin bo'ladi
+              </p>
+            </div>
+            <div class="hero-img">
+              <img src="./assets/hero-nothing.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="users">
+        <div class="container">
+          <div class="users-wrapper"></div>
+
+          <div class="users-skeleton">
+            <div>
+              <div class="users-skeleton__image"></div>
+              <div class="users-skeleton__line"></div>
+              <div class="users-skeleton__line"></div>
+            </div>
+            <div>
+              <div class="users-skeleton__image"></div>
+              <div class="users-skeleton__line"></div>
+              <div class="users-skeleton__line"></div>
+            </div>
+            <div>
+              <div class="users-skeleton__image"></div>
+              <div class="users-skeleton__line"></div>
+              <div class="users-skeleton__line"></div>
+            </div>
+            <div>
+              <div class="users-skeleton__image"></div>
+              <div class="users-skeleton__line"></div>
+              <div class="users-skeleton__line"></div>
+            </div>
+          </div>
+          <button onclick="seeMore()">Ko'proq ko'rish</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <p>Copyright @ 2022 | Nothing</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>
