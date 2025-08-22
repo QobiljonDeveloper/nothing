@@ -37,8 +37,18 @@ function createPosts(data) {
       <div class="posts-card__body">
         <h3>${item.title}</h3>
         <p>${item.body}</p>
+
         <div class="posts-card__tags">
           ${tagsHTML}
+        </div>
+
+        <div class="posts-card__info">
+          <p><strong>Views:</strong> ${item.views}</p>
+        </div>
+
+        <div class="posts-card__reactions">
+          <span>👍 ${item.reactions.likes}</span>
+          <span>👎 ${item.reactions.dislikes}</span>
         </div>
       </div>
     `;
@@ -53,7 +63,7 @@ function seeMore() {
   offset++;
   postsSkeletonEl.style.display = "grid";
   fetchData(
-    `/users?limit=4&skip=${offset * 4}`,
+    `/posts?limit=4&skip=${offset * 4}`,
     createPosts,
     closePostsSkeleton
   );
