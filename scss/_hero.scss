@@ -1,24 +1,39 @@
 .hero {
   background: linear-gradient(135deg, #141e30 0%, #243b55 100%);
-  &-wrapper{
+  &-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 125px 0;
   }
-  &-img{
+  &-img {
     width: 50%;
   }
-  &-content{
+  &-content {
     width: 50%;
-    h3{
-        font-size: 36px;
-        color: white;
+    h3 {
+      font-size: 36px;
+      color: white;
     }
-    p{
-        font-size: 18px;
-        color: white;
-        margin-top: 20px;
+    p {
+      font-size: 18px;
+      color: white;
+      margin-top: 20px;
     }
+  }
+}
+
+@media (max-width: 800px) {
+  .hero {
+    &-wrapper {
+      flex-direction: column-reverse;
+      gap: 20px;
+    }
+  }
+  &-img {
+    width: 100%;
+  }
+  &-content {
+    width: 100%;
   }
 }
